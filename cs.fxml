@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="Formcs" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.CsController">
+   <children>
+      <AnchorPane layoutX="29.0" layoutY="18.0" prefHeight="541.0" prefWidth="350.0" style="-fx-border-color: #904889; -fx-border-radius: 70px;">
+         <children>
+            <Label layoutX="74.0" layoutY="26.0" text="CS department" textFill="#6c3080">
+               <font>
+                  <Font name="Arial Black" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="88.0" text="ID" textFill="#904889">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idfeild" layoutX="36.0" layoutY="113.0" prefHeight="36.0" prefWidth="166.0" promptText="id" />
+            <TextField fx:id="namefeild" layoutX="36.0" layoutY="189.0" prefHeight="36.0" prefWidth="166.0" promptText="student name" />
+            <Label layoutX="36.0" layoutY="164.0" text="student name" textFill="#904889">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="course1feild" layoutX="36.0" layoutY="260.0" prefHeight="36.0" prefWidth="98.0" promptText="course1" />
+            <Label layoutX="131.0" layoutY="233.0" text="courses" textFill="#904889">
+               <font>
+                  <Font name="Ebrima" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="deletebtn" layoutX="36.0" layoutY="406.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #6c3080; -fx-background-radius: 50px;" text="Delete" textFill="WHITE" />
+            <Button fx:id="addbtn" layoutX="191.0" layoutY="406.0" mnemonicParsing="false" onAction="#sett" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #6c3080; -fx-background-radius: 50px;" text="Add" textFill="WHITE" />
+            <TextField fx:id="course4feild" layoutX="182.0" layoutY="304.0" prefHeight="36.0" prefWidth="98.0" promptText="course4" />
+            <TextField fx:id="course3feild" layoutX="36.0" layoutY="304.0" prefHeight="36.0" prefWidth="98.0" promptText="course3" />
+            <TextField fx:id="course6feild" layoutX="182.0" layoutY="356.0" prefHeight="36.0" prefWidth="98.0" promptText="course6" />
+            <TextField fx:id="course5feild" layoutX="36.0" layoutY="356.0" prefHeight="36.0" prefWidth="98.0" promptText="course5" />
+            <TextField fx:id="course2feild" layoutX="182.0" layoutY="260.0" prefHeight="36.0" prefWidth="98.0" promptText="course2" />
+            <Button fx:id="gobackbtn" layoutX="119.0" layoutY="468.0" mnemonicParsing="false" onAction="#goback" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #6c3080; -fx-background-radius: 50px;" text="go back" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="370.0" prefHeight="500.0" prefWidth="681.0">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="274.0" prefHeight="223.0" prefWidth="642.0" />
+            <AnchorPane layoutX="24.0" layoutY="18.0" prefHeight="541.0" prefWidth="622.0" style="-fx-border-color: #904889; -fx-border-radius: 70px;">
+               <children>
+                  <TableView fx:id="tablecs" layoutX="27.0" layoutY="44.0" onMouseClicked="#studentselectdata" onSort="#studentShowData" prefHeight="477.0" prefWidth="579.0" style="-fx-background-color: white; -fx-border-radius: 70px;" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="43.0">
+                    <columns>
+                      <TableColumn fx:id="idtab" prefWidth="61.0" text="id" />
+                      <TableColumn fx:id="nametab" prefWidth="78.0" text="name" />
+                        <TableColumn fx:id="course1tab" prefWidth="79.0" text="course1" />
+                        <TableColumn fx:id="course2tab" prefWidth="68.0" text="course2" />
+                        <TableColumn fx:id="course3tab" prefWidth="76.0" text="course3" />
+                        <TableColumn fx:id="course4tab" prefWidth="76.0" text="course4" />
+                        <TableColumn fx:id="course5tab" prefWidth="64.0" text="course5" />
+                        <TableColumn fx:id="course6tab" text="course6" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
